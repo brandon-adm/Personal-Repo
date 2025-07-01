@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Quicksand:wght@300..700&display=swap');
+
+
+body {
+    background: #1B1B1B;
+    color:#FAF9F6;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: #FAF9F6;
+}
+
+
+
+h1 {
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.h2 {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 32px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lead {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 20px;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.color {
+    width: clamp(800px, 80vw, 1300px);
+    height: clamp(800px, 80vw, 1300px);
+    background: radial-gradient(circle, #0047AB 5%, rgba(27, 27, 27, 0) 65%);
+    border-radius: 50%;
+    position: fixed;
+    left: 50%;
+    bottom: -40vh;
+    transform: translateX(-50%) scale(1);
+    pointer-events: none;
+    z-index: -1;
+    animation: pulse 10s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: translateX(-50%) scale(0.9);
+    }
+
+    50% {
+        transform: translateX(-50%) scale(1.2);
+    }
+
+    100% {
+        transform: translateX(-50%) scale(0.9);
+    }
+}
