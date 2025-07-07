@@ -44,7 +44,7 @@ h1 {
     border-radius: 50%;
     position: fixed;
     left: 50%;
-    bottom: -40vh;
+    bottom: -70vh;
     transform: translateX(-50%) scale(1);
     pointer-events: none;
     z-index: -1;
